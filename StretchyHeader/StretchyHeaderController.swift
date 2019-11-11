@@ -19,6 +19,7 @@ class StretchyHeaderController: UICollectionViewController,UICollectionViewDeleg
     
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white
+        collectionView.contentInsetAdjustmentBehavior = .never 
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)

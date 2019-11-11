@@ -21,7 +21,9 @@ class HeaderView: UICollectionReusableView {
         super.init(frame: frame)
         
         backgroundColor = .red
+        
         addSubview(imageView)
+        imageView.fillSuperview()
     }
     
     required init?(coder aDecoder: NSCoder) {
