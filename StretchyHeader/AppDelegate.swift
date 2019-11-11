@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          window = UIWindow()
         window?.rootViewController =
             StretchyHeaderController(collectionViewLayout:
-                UICollectionViewFlowLayout())
+                StretchyHeaderLayout())
 
         return true
     }
